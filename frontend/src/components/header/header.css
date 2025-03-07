@@ -1,0 +1,86 @@
+#drawerH {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #navmnu {
+        display: none; 
+    }
+    #drawerH {
+        display: flex; 
+    }
+    #hello {
+        display: none;
+    }
+    #theme-in-dropdown {
+        display: block; 
+    }
+    #header{
+        right: 0;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #navmnu {
+        display: none;
+    }
+    body {
+        overflow-y: hidden;
+    }
+    #drawerH {
+        display: flex; 
+    }
+    #hello {
+        display: none; 
+    }
+    #theme-in-dropdown {
+        display: block; 
+    }
+    #header{
+        right: 0;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    #theme-in-dropdown {
+        display: none; 
+    }
+    #hello {
+        display: block; 
+    }
+    
+
+}
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Change width to desired value */
+    height: 8px; /* Change height for horizontal scrollbars */
+    border-radius: 30px;
+  }
+  
+  /* Track (background of scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Light background */
+  }
+  
+  /* Handle (the part you can grab and scroll) */
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Darker handle */
+    border-radius: 30px; /* Rounded corners */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: transparent; /* Darker handle when hovered */
+    border-radius: 30px;
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin; /* Make scrollbar thin */
+    scrollbar-color: transparent transparent; /* thumb color and track color */
+  }
+  
